@@ -28,7 +28,7 @@ body {
   padding: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Favorvetica", Georgia, "Times New Roman", serif;
 }
 
 body {
@@ -280,7 +280,7 @@ a {
 .subtitle {
   font-size: 24px;
   line-height: 1.02;
-  letter-spacing: -0.03em;
+  letter-spacing: 5em;
   margin: 0;
   color: #2a2a2a;
   font-weight: 400;
@@ -308,7 +308,7 @@ a {
   margin: 0;
   font-size: clamp(42px, 7vw, 110px);
   line-height: 0.92;
-  letter-spacing: 1em;
+  letter-spacing: 5em;
   font-weight: 700;
   color: #111;
   opacity: 0;
