@@ -6,7 +6,7 @@ const site = {
   { label: "About Me", url: "https://adrielreyes.my.canva.site/adshome/about-me" },
   { label: "Contact Me", url: "https://adrielreyes.my.canva.site/adshome/contact" }
 ],*/
-  menu: ["Experiences", "About Me", "Contct Me"],
+  menu: "["Experiences", "About Me", "Contct Me"]",
   sideLabel: "Categories +",
   heroWord: "my works",
   endingTitle: "you finished this category.",
