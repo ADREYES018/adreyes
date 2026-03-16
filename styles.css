@@ -176,7 +176,7 @@ a {
   position: absolute;
   left: 38px;
   bottom: 34px;
-  font-size: clamp(64px, 9vw, 140px);
+  font-size: clamp(128px, 9vw, 280px);
   line-height: 0.9;
   letter-spacing: 1em;
   font-weight: 700;
