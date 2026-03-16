@@ -1,8 +1,7 @@
 const site = {
   logoText: "Adriel Reyes",
   logoUrl: "https://adrielreyes.my.canva.site/adshome/",
-  menu: [
-  { label: "Experiences", url: "https://adrielreyes.my.canva.site/adshome/experiences" }, { label: "About me", url: "https://adrielreyes.my.canva.site/adshome/about-me" }, { label: "Contact Me", url: "https://adrielreyes.my.canva.site/adshome/contact" }],
+  menu: ["Experiences", "About Me", "Contact Me"],
   sideLabel: "Categories +",
   heroWord: "my works",
   endingTitle: "you finished this category.",
