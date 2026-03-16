@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Portfolio Scroll</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="fixed-ui">
+        <div class="topbar">
+          <a class="logo" href="#" id="logoLink">
+            <img src="" alt="Logo" class="logo-image" id="logoImage" style="display: none;">
+            <span class="logo-text" id="logoText">Adriel Reyes</span>
+          </a>
+
+          <nav class="nav" id="navMenu">
+            <!-- Navigation items injected by script.js -->
+          </nav>
+
+          <div class="menu" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="side-label" id="sideLabel">Categories +</div>
+        <div class="hero-word" id="heroWord">my works</div>
+      </div>
+
+      <section class="track-section" id="trackSection">
+        <div class="sticky-stage">
+          <div class="rail-wrap">
+            <div class="rail" id="rail">
+              <!-- Project cards injected by script.js -->
+            </div>
+          </div>
+
+          <div class="ending-screen" id="endingScreen">
+            <div class="ending-inner">
+              <h2 class="ending-title" id="endingTitle">you finished this category.</h2>
+              <a
+                class="ending-button"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="endingButton"
+              >
+                want to go to next category?
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
