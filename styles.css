@@ -80,7 +80,7 @@ a {
   font-weight: 700;
   color: var(--accent);
   letter-spacing: -0.04em;
-  font-family: "Favorvetica", sans-serif;
+  font-family: "Favorvetica-bold", sans-serif;
 }
 
 .logo-image {
@@ -186,7 +186,7 @@ a {
   transform-origin: left bottom;
   transition: opacity 0.12s linear, filter 0.12s linear;
   will-change: opacity, filter;
-  font-family: "Favorvetica", sans-serif;
+  font-family: "Favorvetica-bold", sans-serif;
 }
 
 .track-section {
