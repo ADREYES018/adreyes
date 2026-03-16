@@ -106,11 +106,10 @@ function setupSiteContent() {
   }
 
   if (navMenu) {
-    navMenu.innerHTML = site.menu
-      .map((item) => `<a href="#">${item}</a>`)
-      .join("");
-  }
-
+  navMenu.innerHTML = site.menu
+    .map((item) => `<a href="${item.url}">${item.label}</a>`)
+    .join("");
+}
   if (sideLabel) sideLabel.textContent = site.sideLabel;
   if (heroWord) heroWord.textContent = site.heroWord;
   if (endingTitle) endingTitle.textContent = site.endingTitle;
