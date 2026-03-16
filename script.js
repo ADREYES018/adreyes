@@ -96,6 +96,7 @@ function setupSiteContent() {
   const heroWord = document.getElementById("heroWord");
   const endingTitle = document.getElementById("endingTitle");
   const endingButton = document.getElementById("endingButton");
+  const categoryWord = document.getElementById("categoryWord");
 
   if (site.logoUrl && logoImage) {
     logoImage.src = site.logoUrl;
@@ -121,6 +122,7 @@ function setupSiteContent() {
 
   if (sideLabel) sideLabel.textContent = site.sideLabel;
   if (heroWord) heroWord.textContent = site.heroWord;
+  if (categoryWord) categoryWord.textContent = site.categoryWord;
   if (endingTitle) endingTitle.textContent = site.endingTitle;
 
   if (endingButton) {
