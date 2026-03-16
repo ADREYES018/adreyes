@@ -80,7 +80,7 @@ a {
   font-weight: 700;
   color: var(--accent);
   letter-spacing: -0.04em;
-  font-family: "Favorvetica-bold", sans-serif;
+  font-family: "Favorvetica", sans-serif;
 }
 
 .logo-image {
@@ -178,7 +178,7 @@ a {
   bottom: 34px;
   font-size: clamp(64px, 9vw, 140px);
   line-height: 0.9;
-  letter-spacing: -0.06em;
+  letter-spacing: 1em;
   font-weight: 700;
   color: rgba(17, 17, 17, 0.94);
   pointer-events: none;
@@ -186,7 +186,7 @@ a {
   transform-origin: left bottom;
   transition: opacity 0.12s linear, filter 0.12s linear;
   will-change: opacity, filter;
-  font-family: "Favorvetica-bold", sans-serif;
+  font-family: "Favorvetica", sans-serif;
 }
 
 .track-section {
@@ -308,7 +308,7 @@ a {
   margin: 0;
   font-size: clamp(42px, 7vw, 110px);
   line-height: 0.92;
-  letter-spacing: -0.06em;
+  letter-spacing: 1em;
   font-weight: 700;
   color: #111;
   opacity: 0;
