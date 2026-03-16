@@ -200,7 +200,7 @@ a {
 .rail {
   display: flex;
   align-items: flex-start;
-  gap: 42px;
+  gap: 20px;
   padding-left: 60vw;
   padding-right: 275vw;
   will-change: transform;
