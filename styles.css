@@ -353,7 +353,7 @@ a {
   .hero-word {
     font-size: 30vw !important;
     left: 8px !important;
-    bottom: 6px !important;
+    bottom: 12px !important;
     line-height: 0.76 !important;
     letter-spacing: -0.08em !important;
     z-index: 1 !important;
