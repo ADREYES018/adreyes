@@ -79,7 +79,7 @@ a {
   line-height: 1;
   font-weight: 700;
   color: var(--accent);
-  letter-spacing: 1em;
+  letter-spacing: .03em;
   font-family: "Favorvetica", sans-serif;
 }
 
@@ -150,7 +150,7 @@ a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
   color: var(--accent);
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
 }
 
 .scroll-note {
@@ -178,7 +178,7 @@ a {
   bottom: 34px;
   font-size: clamp(128px, 9vw, 280px);
   line-height: 0.9;
-  letter-spacing: .5em;
+  letter-spacing: .03em;
   font-weight: 700;
   color: rgba(17, 17, 17, 0.94);
   pointer-events: none;
@@ -280,7 +280,7 @@ a {
 .subtitle {
   font-size: 24px;
   line-height: 1.02;
-  letter-spacing: 5em;
+  letter-spacing: .03em;
   margin: 0;
   color: #2a2a2a;
   font-weight: 400;
