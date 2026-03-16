@@ -3,6 +3,7 @@
   src: url("./Favorvetica-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: url("./Favorvetica-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -130,9 +132,17 @@ a {
   background: var(--accent);
 }
 
-.menu span:nth-child(1) { top: 3px; }
-.menu span:nth-child(2) { top: 11px; }
-.menu span:nth-child(3) { top: 19px; }
+.menu span:nth-child(1) {
+  top: 3px;
+}
+
+.menu span:nth-child(2) {
+  top: 11px;
+}
+
+.menu span:nth-child(3) {
+  top: 19px;
+}
 
 .side-label {
   position: absolute;
@@ -163,6 +173,7 @@ a {
   color: #4b4b4b;
   background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .hero-word {
@@ -176,6 +187,9 @@ a {
   color: rgba(17, 17, 17, 0.94);
   pointer-events: none;
   z-index: 1;
+  transform-origin: left bottom;
+  transition: opacity 0.12s linear, filter 0.12s linear;
+  will-change: opacity, filter;
   font-family: "Favorvetica", sans-serif;
 }
 
@@ -206,6 +220,7 @@ a {
   gap: 20px;
   padding-left: 60vw;
   padding-right: 275vw;
+  will-change: transform;
 }
 
 .card {
@@ -256,14 +271,23 @@ a {
   margin-bottom: 12px;
 }
 
-.title,
+.title {
+  font-size: 24px;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  margin: 0 0 4px 0;
+  font-weight: 400;
+  color: var(--text);
+  font-family: "Favorvetica", sans-serif;
+}
+
 .subtitle {
   font-size: 24px;
   line-height: 1.02;
   letter-spacing: -0.03em;
   margin: 0;
+  color: #2a2a2a;
   font-weight: 400;
-  color: var(--text);
   font-family: "Favorvetica", sans-serif;
 }
 
@@ -294,6 +318,8 @@ a {
   opacity: 0;
   transform: translateY(28px);
   filter: blur(14px);
+  transition: opacity 0.18s linear, transform 0.18s linear, filter 0.18s linear;
+  font-family: "Favorvetica", sans-serif;
 }
 
 .ending-button {
@@ -305,10 +331,18 @@ a {
   border: 1px solid rgba(0, 74, 173, 0.28);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.76);
-  font-family: Arial, Helvetica, sans-serif;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-family: "Favorvetica", sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: var(--accent);
+  letter-spacing: 0.01em;
+  opacity: 0;
+  transform: translateY(18px);
+  filter: blur(8px);
+  pointer-events: none;
+  transition: opacity 0.18s linear, transform 0.18s linear, filter 0.18s linear, background 0.2s ease;
 }
 
 .category-word {
@@ -327,8 +361,11 @@ a {
   white-space: nowrap;
 }
 
-@media screen and (max-width: 1000px) {
+.ending-button:hover {
+  background: rgba(255, 255, 255, 0.94);
+}
 
+@media screen and (max-width: 1000px) {
   .nav,
   .side-label,
   .scroll-note {
@@ -345,29 +382,93 @@ a {
     font-size: 40px !important;
   }
 
+  .sticky-stage {
+    height: 100svh !important;
+  }
+
   .hero-word {
     font-size: 30vw !important;
     left: 8px !important;
     bottom: 12px !important;
+    line-height: 0.76 !important;
+    letter-spacing: -0.08em !important;
+    z-index: 1 !important;
   }
 
   .rail-wrap {
     top: 120px !important;
+    left: 0 !important;
     transform: none !important;
+    width: 100% !important;
+    z-index: 5 !important;
+  }
+
+  .rail {
+    gap: 24px !important;
+    padding-left: 104vw !important;
+    padding-right: 1080vw !important;
+    align-items: flex-start !important;
   }
 
   .card {
     width: calc(100vw - 32px) !important;
+    flex: 0 0 calc(100vw - 32px) !important;
+    max-width: none !important;
   }
 
   .image-frame {
     width: calc(85vw - 32px) !important;
     height: 60svh !important;
+    max-width: none !important;
+    max-height: none !important;
+  }
+
+  .image-frame img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .meta {
+    margin-top: 18px !important;
+  }
+
+  .category {
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .rule {
+    width: 140px !important;
+    margin-bottom: 2px !important;
   }
 
   .title,
   .subtitle {
     font-size: 28px !important;
+    line-height: 0.92 !important;
+    letter-spacing: -0.05em !important;
   }
 
+  .ending-inner {
+    padding: 20px !important;
+  }
+
+  .ending-title {
+    font-size: 18vw !important;
+    line-height: 0.9 !important;
+  }
+
+  .ending-button {
+    font-size: 12px !important;
+    padding: 16px 24px !important;
+  }
+
+  .category-word {
+    right: 20px !important;
+    top: 150px !important;
+    font-size: 18vw !important;
+    line-height: 0.9 !important;
+    z-index: 2 !important;
+  }
 }
