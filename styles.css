@@ -308,7 +308,7 @@ a {
   margin: 0;
   font-size: clamp(42px, 7vw, 110px);
   line-height: 0.92;
-  letter-spacing: ..03em;
+  letter-spacing: .02em;
   font-weight: 700;
   color: #111;
   opacity: 0;
