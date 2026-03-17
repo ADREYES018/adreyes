@@ -345,7 +345,7 @@ a {
   position: absolute;
   right: 120px;
   top: 170px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Favorvetica", sans-serif;
   font-size: clamp(90px, 10vw, 220px);
   line-height: 0.9;
   font-weight: 800;
