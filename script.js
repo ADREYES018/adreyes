@@ -10,6 +10,7 @@ const site = {
 
   sideLabel: "Categories +",
   heroWord: "my works",
+  categoryWord: "Graphic Design",
   endingTitle: "you finished this category.",
   endingButtonText: "want to go to next category?",
   endingButtonUrl: "#"
