@@ -188,6 +188,21 @@ function updateHorizontalScroll() {
 
   rail.style.transform = `translateX(${-distance * progress}px)`;
 
+  // "Graphic Design" fade out near the end
+const categoryWord = document.getElementById("categoryWord");
+
+if (categoryWord) {
+  const categoryStart = 0.88;
+  const categoryEnd = 0.97;
+
+  const categoryProgress = mapProgress(progress, categoryStart, categoryEnd);
+  const categoryEase = 1 - Math.pow(1 - categoryProgress, 2);
+
+  categoryWord.style.opacity = String(1 - categoryEase);
+  categoryWord.style.transform = `translateY(${categoryEase * -80}px) scale(${1 - categoryEase * 0.1})`;
+  categoryWord.style.filter = `blur(${categoryEase * 10}px)`;
+  }
+
   const heroStart = 0.015;
   const heroEnd = 0.16;
   const heroProgress = mapProgress(progress, heroStart, heroEnd);
