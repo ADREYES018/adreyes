@@ -95,9 +95,10 @@ function setupSiteContent() {
   const navMenu = document.getElementById("navMenu");
   const sideLabel = document.getElementById("sideLabel");
   const heroWord = document.getElementById("heroWord");
+  const categoryWord = document.getElementById("categoryWord");
   const endingTitle = document.getElementById("endingTitle");
   const endingButton = document.getElementById("endingButton");
-  const categoryWord = document.getElementById("categoryWord");
+
 
   if (site.logoUrl && logoImage) {
     logoImage.src = site.logoUrl;
